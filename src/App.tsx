@@ -20,6 +20,9 @@ function App() {
         <GoodMorningButton />
         <HappyNewYearButton />
         </div>
+        <div className="absolute bottom-0 p-2 border-t-2 w-full text-center  border-black font-semibold">
+          <p>Made with 💝  by Shakti Dubey and Sandeep Prajapati.</p>
+        </div>
       </div>
       {/* <div className="h-screen w-screen">
         <GoodMorning /> */}

@@ -17,7 +17,7 @@ export default function GoodMorning() {
       <p className="text-blue-950 absolute top-1/2 w-full text-center px-4 font-bold text-6xl tracking-wide">
         GOOD MORNING
       </p>
-      <div className=" flex flex md:flex-row flex-col  gap-4 absolute mx-auto top-[70%] right-1/2 translate-x-1/2 text-white">
+      <div className=" flex  md:flex-row flex-col  gap-4 absolute mx-auto top-[70%] right-1/2 translate-x-1/2 text-white">
         <button
           // onClick={handleButtonClick}
           className="border p-4 w-[14em] border-white font-bold text-lg outline-none px-6 py-8 rounded-md"
@@ -26,6 +26,9 @@ export default function GoodMorning() {
         </button>
         <HappyNewYear/>
       </div>
+      <div className="absolute bottom-0 p-2 border-t-2 w-full text-center text-blue-950 border-white font-semibold">
+          <p>Made with 💝  by Shakti Dubey and Sandeep Prajapati.</p>
+        </div>
     </div>
   );
 }
