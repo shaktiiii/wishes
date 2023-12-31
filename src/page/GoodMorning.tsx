@@ -4,7 +4,7 @@ import HappyNewYear from "../components/buttons/HappyNewYear";
 
 export default function GoodMorning() {
   return (
-    <div className="h-full overflow-hidden">
+    <div className="h-screen overflow-hidden">
       <video
         autoPlay
         muted
