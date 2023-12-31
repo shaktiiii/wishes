@@ -9,8 +9,8 @@ function App() {
 
   return (
     <div className="h-screen w-screen">
-    {/* <GoodMorning/> */}
-    <HappyNewYear />
+    <GoodMorning/>
+    {/* <HappyNewYear /> */}
   </div>
   );
 }
