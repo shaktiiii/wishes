@@ -11,15 +11,15 @@
 
 /* // To make it responsive  */
 
-/* .mobile {
+.mobile {
   visibility: collapse;
   position: absolute;
-} */
-/* @media only screen and (max-width: 712px) {
+}
+@media only screen and (max-width: 712px) {
   .desktop {
     visibility: collapse;
   }
   .mobile {
     visibility: visible;
   }
-} */
+}

@@ -6,10 +6,10 @@ function App() {
   return (
     <>
       <div className="flex flex-col gap-20 h-screen w-screen justify-center items-center ">
-        <p className=" text-4xl font-bold tracking-wide">
-          Click any button to redeme token!!
+        <p className="p-4 text-center text-4xl font-bold tracking-wide">
+          Click any button to redeem token!!
         </p>
-        <div className="flex gap-10 ">
+        <div className="flex md:flex-row flex-col  gap-10 ">
           <GoodMorningButton />
           <HappyNewYearButton />
         </div>

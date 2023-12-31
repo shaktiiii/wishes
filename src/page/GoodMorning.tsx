@@ -4,7 +4,7 @@ import HappyNewYear from "../components/buttons/HappyNewYear";
 
 export default function GoodMorning() {
   return (
-    <div className="h-full overflow-hidden">
+    <div className="h-screen overflow-hidden">
       <video
         autoPlay
         muted
@@ -17,7 +17,7 @@ export default function GoodMorning() {
       <p className="text-blue-950 absolute top-1/2 w-full text-center px-4 font-bold text-6xl tracking-wide">
         GOOD MORNING
       </p>
-      <div className=" flex  gap-4 absolute mx-auto top-[70%] right-1/2 translate-x-1/2 text-white">
+      <div className=" flex flex md:flex-row flex-col  gap-4 absolute mx-auto top-[70%] right-1/2 translate-x-1/2 text-white">
         <button
           // onClick={handleButtonClick}
           className="border p-4 w-[14em] border-white font-bold text-lg outline-none px-6 py-8 rounded-md"
