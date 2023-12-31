@@ -2,6 +2,7 @@ import { useAccount, useContractWrite } from "wagmi";
 import { useWeb3Modal, useWeb3ModalState } from "@web3modal/wagmi/react";
 import { useSwitchNetwork, useWaitForTransaction } from "wagmi";
 import { polygonMumbai } from "wagmi/chains";
+import { useNavigate } from "react-router-dom";
 
 import {
   HappyNewYearABI,
@@ -10,6 +11,7 @@ import {
 
 const HappyNewYear = () => {
   const amountToMintOnEachGreet = 69;
+  const navigate = useNavigate();
 
   const { address } = useAccount();
 
@@ -36,6 +38,7 @@ const HappyNewYear = () => {
     hash: data?.hash,
     onSuccess(data) {
       console.log("Transaction Was Sucessful & Btw Happy NewYear", data); // function called here will be called after the transaction is sucessful.
+      navigate("/happy-new-year");
     },
   });
 
@@ -63,7 +66,7 @@ const HappyNewYear = () => {
             switchNetwork?.(polygonMumbai.id);
           }
         }}
-        className="border-2 border-black w-[12em]  outline-none px-4 py-2 rounded-md"
+        className="nightss  border-2 w-[14em] border-black outline-none whitespace-nowrap  font-bold text-lg px-6 py-8 rounded-md text-white"
       >
         Happy New Year
       </button>

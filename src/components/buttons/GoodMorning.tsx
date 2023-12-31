@@ -2,6 +2,7 @@ import { useAccount, useContractWrite } from "wagmi";
 import { useWeb3Modal, useWeb3ModalState } from "@web3modal/wagmi/react";
 import { useSwitchNetwork, useWaitForTransaction } from "wagmi";
 import { polygonMumbai } from "wagmi/chains";
+import { useNavigate } from "react-router-dom";
 
 import {
   GoodMorningABI,
@@ -10,6 +11,7 @@ import {
 
 const GoodMorning = () => {
   const amountToMintOnEachGreet = 69;
+  const navigate = useNavigate();
 
   const { address } = useAccount();
 
@@ -36,6 +38,7 @@ const GoodMorning = () => {
     hash: data?.hash,
     onSuccess(data) {
       console.log("Transaction Was Sucessful & Btw Happy NewYear", data); // function called here will be called after the transaction is sucessful.
+      navigate("/good-morning");
     },
   });
 
@@ -63,7 +66,7 @@ const GoodMorning = () => {
             switchNetwork?.(polygonMumbai.id);
           }
         }}
-        className="border-2 border-black w-[12em]  outline-none px-4 py-2 rounded-md hover:border-opacity-60"
+        className="dayss  border-2 p-4 w-[14em] border-black font-bold text-lg outline-none px-6 py-8 rounded-md"
       >
         Good Morning
       </button>

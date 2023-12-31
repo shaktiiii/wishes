@@ -13,12 +13,20 @@ function App() {
 
   return (
     <>
-      <div className="flex gap-5 h-screen w-screen justify-center items-center ">
-        <HappyNewYearButton />
+      <div className="flex flex-col gap-20 h-screen w-screen justify-center items-center ">
+        <p className=" text-4xl font-bold tracking-wide">Click any button to redeme token!!</p>
+        <div className="flex gap-10 ">
+
         <GoodMorningButton />
+        <HappyNewYearButton />
+        </div>
       </div>
-      /// This is just to refer the responsive design
-      <div className="forBg h-screen w-screen">
+      {/* <div className="h-screen w-screen">
+        <GoodMorning /> */}
+        {/* <HappyNewYear /> */}
+      {/* </div> */}
+      {/* /// This is just to refer the responsive design */}
+      {/* <div className="forBg h-screen w-screen">
         <div className="mobile">
           <video
             autoPlay
@@ -41,11 +49,7 @@ function App() {
             <source src={desktopVideo} type="video/mp4" />
           </video>
         </div>
-      </div>
-      <div className="h-screen w-screen">
-        <GoodMorning />
-        {/* <HappyNewYear /> */}
-      </div>
+      </div> */}
     </>
   );
 }

@@ -1,21 +1,25 @@
-.mobile {
-    visibility: collapse;
-    position: absolute;
-}
 
-@media only screen and (max-width: 712px) {
-    .desktop {
-        visibility: collapse;
-    }
-    .mobile {
-        visibility: visible;
-    }
-.dayss{
+.dayss {
     background-image: url(/dayss.png);
     background-size: cover;
 }
 
-.nightss{
+.nightss {
     background-image: url(/nightss.png);
     background-size: cover;
 }
+
+/* // To make it responsive  */
+
+/* .mobile {
+  visibility: collapse;
+  position: absolute;
+} */
+/* @media only screen and (max-width: 712px) {
+  .desktop {
+    visibility: collapse;
+  }
+  .mobile {
+    visibility: visible;
+  }
+} */

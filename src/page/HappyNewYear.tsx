@@ -1,3 +1,4 @@
+import GoodMorning from "../components/buttons/GoodMorning";
 import night from "/nightpc.mp4";
 
 export default function HappyNewYear() {
@@ -16,16 +17,8 @@ export default function HappyNewYear() {
         HAPPY NEW YEAR
       </p>
       <div className=" flex gap-4 absolute mx-auto top-[70%] right-1/2 translate-x-1/2 text-white">
-        <button
-          // onClick={handleButtonClick}
-          className="border w-[10em] border-white outline-none font-bold text-lg px-6 py-8 rounded-md dayss"
-        >
-          Good Morning
-        </button>
-        <button
-         
-          className="border w-[10em] border-white outline-none whitespace-nowrap  font-bold text-lg px-6 py-8 rounded-md"
-        >
+        <GoodMorning />
+        <button className="border w-[10em] border-white outline-none whitespace-nowrap  font-bold text-lg px-6 py-8 rounded-md">
           Happy New Year
         </button>
       </div>
