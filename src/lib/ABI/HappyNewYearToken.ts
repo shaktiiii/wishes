@@ -372,4 +372,4 @@ export const HappyNewYearABI = [
     type: "function",
   },
 ];
-export const HappyNewYearAddress = "0x97B450f83185CC63A5d211Bd8F876Afa4a865fD9";
+export const HappyNewYearAddress = "0xf861FcA4ec7ECE1A3E686E4dD22dBf032BD15c29";

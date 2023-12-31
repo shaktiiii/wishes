@@ -1,7 +1,7 @@
 import { useAccount, useContractWrite } from "wagmi";
 import { useWeb3Modal, useWeb3ModalState } from "@web3modal/wagmi/react";
 import { useSwitchNetwork, useWaitForTransaction } from "wagmi";
-import { polygonMumbai } from "wagmi/chains";
+import { polygon } from "wagmi/chains";
 import { useNavigate } from "react-router-dom";
 
 import {
@@ -48,7 +48,7 @@ const HappyNewYear = () => {
         args: [amountToMintOnEachGreet],
       });
     } else {
-      switchNetwork?.(polygonMumbai.id);
+      switchNetwork?.(polygon.id);
       write({
         args: [amountToMintOnEachGreet],
       });
@@ -63,7 +63,7 @@ const HappyNewYear = () => {
             handleButtonClick();
           } else {
             await open();
-            switchNetwork?.(polygonMumbai.id);
+            switchNetwork?.(polygon.id);
           }
         }}
         className="nightss  border-2 w-[14em] border-black outline-none whitespace-nowrap  font-bold text-lg px-6 py-8 rounded-md text-white"
