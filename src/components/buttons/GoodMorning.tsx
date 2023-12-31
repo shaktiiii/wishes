@@ -54,7 +54,7 @@ const GoodMorning = () => {
       });
     }
   };
-
+  console.log(waitForTransaction);
   return (
     <>
       <button

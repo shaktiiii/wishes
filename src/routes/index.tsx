@@ -1,5 +1,4 @@
-import React from "react";
-import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
+import {  Route, Routes } from "react-router-dom";
 import GoodMorning from "../page/GoodMorning";
 import HappyNewYear from "../page/HappyNewYear";
 import App from "../App";

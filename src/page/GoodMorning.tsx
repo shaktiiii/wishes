@@ -1,4 +1,3 @@
-import React from "react";
 import sunny from "/daypc.mp4";
 import HappyNewYear from "../components/buttons/HappyNewYear";
 
