@@ -373,4 +373,4 @@ export const GoodMorningABI = [
   },
 ];
 
-export const GoodMorningAddress = "0x99aF0008afF861f44303D4A28fEa40bD62bD6FF3";
+export const GoodMorningAddress = "0x47EcaA054BAEaAFfE39B338fA0b24F4975b41299";
