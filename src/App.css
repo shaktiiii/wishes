@@ -10,4 +10,12 @@
     .mobile {
         visibility: visible;
     }
+.dayss{
+    background-image: url(/dayss.png);
+    background-size: cover;
+}
+
+.nightss{
+    background-image: url(/nightss.png);
+    background-size: cover;
 }
