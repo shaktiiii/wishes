@@ -1,0 +1,99 @@
+.bg{
+    background: rgb(196,249,255);
+background: linear-gradient(180deg, rgba(196,249,255,1) 23%, rgba(165,243,252,1) 49%, rgba(251,209,77,0.9175146621148459) 81%, rgba(245,149,25,0.9623325892857143) 100%);
+}
+
+.bgtwo{
+    background: rgb(198,205,210);
+    /* background: linear-gradient(180deg, rgba(198,205,210,0.9119124212184874) 11%, rgba(143,158,182,0.9343213848039216) 22%, rgba(129,147,181,0.9175146621148459) 31%, rgba(98,113,147,0.9119124212184874) 37%, rgba(66,78,116,0.9259180234593838) 53%, rgba(23,37,84,1) 93%); */
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    filter: drop-shadow(0 0 10px white);
+}
+
+@keyframes moveSunIn {
+    from {
+      /* transform: translate(); */
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes moveSunOut {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes moveMoonIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes moveMoonOut {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-moveSunIn {
+    animation: moveSunIn 4s ease-out forwards;
+  }
+  
+  .animate-moveSunOut {
+    animation: moveSunOut 4s ease-out forwards;
+  }
+  
+  .animate-moveMoonIn {
+    animation: moveMoonIn 4s ease-out forwards;
+  }
+  
+  .animate-moveMoonOut {
+    animation: moveMoonOut 4s ease-out forwards;
+  }
+
+  .main {
+    transition: background 2s ease-in-out; /* Adjust the duration and timing function as needed */
+  }
+  
+  .fade-in {
+    opacity: 1;
+  }
+
+  .bgtwo.fade-in {
+    opacity: 1;
+  }
+
+  canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  
+
+.container{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -250px;
+}
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  
